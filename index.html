@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/mobilefirst.css">
     <link rel="stylesheet" href="estilos/mediaquery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <main>
@@ -14,18 +15,32 @@
            
         </div>
         <div id="ola"> <!--Para nomear essa div anteriormente eu usei um id formulário e nada estava funcionando, talvez tenah sido um bug, ou essa palavra é reservada, ou éra porque não estava atualizado o meu vs code, porém, funcionou as configurações de estilo só após eu mudar esse nome-->
-            <h1>Login</h1>
+            <h1>Login <span class="material-symbols-outlined">
+                login</h1> 
+                </span>
             <p> Bem vindo(a) a Comunidade Sakura!</p>
             <p> Faça o seu login para acessar a sua conta menbro e configurar o seu ambinete exclusivo.</p>
-            <form action="login.php" method="post">
-                <p>
-                    <label for="iemail">E-mail</label>
-                    <input type="text" name="email" id="iemail">
-                </p>
-                <p>
-                    <label for="isenha">Senha</label> 
-                    <input type="text" name="senha" id="isenha">
-                </p>
+            <form action="login.php" method="post" autocomplete="on">
+                <div id="login">
+                    
+                    <span class="material-symbols-outlined">
+                        mail
+                        </span>
+                        <input type="text" name="email" id="iemail" placeholder="Digite o seu E-mail." autocomplete="email" required maxlength="30">
+                         <label for="iemail">E-mail</label>
+                </div>
+                <div id="senha">
+                    
+                    <span class="material-symbols-outlined">
+                        Passkey
+                        </span>
+                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha." autocomplete="current-password" required >
+                         <label for="isenha">Senha</label>
+                </div>
+                <input type="submit" value="Enviar"> Esqueci minha senha
+                <a href="#"> <span class="material-symbols-outlined">
+                    mail
+                    </span>
             </form>
 
         </div>

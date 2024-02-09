@@ -30,6 +30,13 @@
 
 
     }
+    section#login div#ola  h1{    
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 30px;
+        
+    
+    }
 }
 @media screen and (min-width: 992px){
     section#login{
@@ -58,6 +65,12 @@
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
+    }
+    section#login div#ola  h1{    
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 30px;
+    
     }
 
 }

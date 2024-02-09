@@ -28,6 +28,7 @@ main{
     position: relative;
 }
 section#login{
+    color: #d41d4e;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -56,8 +57,9 @@ section#login > div#ola{
 
 }
 section#login div#ola  h1{    
-    font-size: 15px;
+    font-size: 1.5em;
     margin-bottom: 7px;
+
 }
 
 section#login div#ola  p{
@@ -70,7 +72,7 @@ section#login div#ola form{
     padding: 30px 0px 5px 10px;
 }
 section#login div#ola form input{
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 40px;
     background-color: rgba(252, 234, 211, 0.652);
     border-color: #D68D43;
     
