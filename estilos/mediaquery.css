@@ -12,7 +12,8 @@
     section#login{
         margin-top: 30px;
         width: 80%;
-        height: 500px;
+        height: 450px;
+        margin-bottom: 30px;
         
     }
     section#login > div#infeite{
@@ -66,7 +67,8 @@
     section#login{
         margin-top: 30px;
         width: 80%;
-        height: 500px;
+        height: 450px;
+        margin-bottom: 30px;
         
         
     }
