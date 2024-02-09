@@ -40,6 +40,8 @@
     }
     section#login div#ola form{
         margin-top: 30px;
+        width: 60%;
+        height: 50%;
     }
     section#login > div#ola input[type= text], input[type= password]{
         width: 300px;
@@ -81,6 +83,8 @@
     }
     section#login div#ola form{
         margin-top: 30px;
+        width: 60%;
+        height: 50%;
     }
 
     section#login > div#ola input[type= text], input[type= password]{
