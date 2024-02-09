@@ -14,13 +14,14 @@
     box-sizing: border-box;
 }
 html, body{
-   background-image: linear-gradient(to top, #D68D43, #b91440, #C6467D);
-    background-position: top left;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+   
     height: 100vh;
     width: 100vw;
+}
+body{
+    background-image: linear-gradient(to top, #D68D43, #b91440, #C6467D);
+    
+
 }
 main{
     width: 100vw;
