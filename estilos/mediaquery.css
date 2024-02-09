@@ -12,6 +12,7 @@
     section#login{
         
         width: 80vw;
+        height: 60vh;
         
     }
     section#login > div#infeite{
@@ -34,6 +35,7 @@
     section#login{
         
         width: 950px;
+        height: 60vh;
         
     }
     section#login > div#infeite{
