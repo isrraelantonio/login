@@ -14,7 +14,11 @@
     box-sizing: border-box;
 }
 html, body{
-    background-color: white;
+   background-image: linear-gradient(to top, #D68D43, #b91440, #C6467D);
+    background-position: top left;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
 }
@@ -28,11 +32,13 @@ section#login{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: antiquewhite;
+    background-color: rgb(250, 221, 183);
     width: 250px;
     height: 500px;
     border-radius: 40px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.296);
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.17);
+    transition: width .3s, heigth .3s; /*Nesse caso, a mudancas ocorrerão de forma não tão repentina, levará esse tempo em segudos para que ocorra*/
+    transition-timing-function: ease; /*Nesse caso temos transições mais suaves.*/
 }
 section#login > div#infeite{
     background: black url(../imagens/pexels-felix-mittermeier-2832074\ \(1\).jpg);
@@ -42,8 +48,30 @@ section#login > div#infeite{
     display: block;
     border-radius: 40px 40px 0px 0px;
 }
-section#login > div#formulario{
+section#login > div#ola{
    padding: 20px;
    display: block;
+   background-color: white;
+   height: 250px;
 
+}
+section#login div#ola  h1{    
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+section#login div#ola  p{
+    font-size: 12px;
+    margin-bottom: 7px;
+   
+}
+section#login div#ola form{
+    font-size: 10px;
+    padding: 30px 0px 5px 10px;
+}
+section#login div#ola form input{
+    border-radius: 0px 30px 30px 0px;
+    background-color: rgba(252, 234, 211, 0.652);
+    border-color: #D68D43;
+    
 }
