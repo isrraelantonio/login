@@ -5,6 +5,8 @@
 #D68D43 marron meio que dourado
 #C6467D  rosa
 #b91440 um verelho vinho
+
+ background-color: rgba(252, 234, 211, 0.652);
 */
 
 *{
@@ -42,7 +44,7 @@ section#login{
     transition-timing-function: ease; /*Nesse caso temos transições mais suaves.*/
 }
 section#login > div#infeite{
-    background: black url(../imagens/pexels-felix-mittermeier-2832074\ \(1\).jpg);
+    background: #d41d4e url(../imagens/pexels-felix-mittermeier-2832074\ \(1\).jpg);
     background-size: cover;
     background-position: top center;
     height: 200px;
@@ -50,7 +52,7 @@ section#login > div#infeite{
     border-radius: 40px 40px 0px 0px;
 }
 section#login > div#ola{
-   padding: 20px;
+   padding: 10px;
    display: block;
    background-color: white;
    height: 250px;
@@ -61,7 +63,6 @@ section#login div#ola  h1{
     margin-bottom: 7px;
 
 }
-
 section#login div#ola  p{
     font-size: 12px;
     margin-bottom: 7px;
@@ -69,11 +70,57 @@ section#login div#ola  p{
 }
 section#login div#ola form{
     font-size: 10px;
-    padding: 30px 0px 5px 10px;
+    padding: 3px 0px 5px 10px;
 }
 section#login div#ola form input{
     border-radius: 40px;
-    background-color: rgba(252, 234, 211, 0.652);
     border-color: #D68D43;
     
 }
+
+section#login > div#ola input[type= text], input[type= password]{
+    font-size: 12px;
+    padding: 6px 3px 6px 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+form input[type= submit]{
+    margin: 3px auto 25px auto;
+    display: block;
+    font-size: 1em;
+    width: 50%;
+    padding: 6px;
+    color:  white;
+    background-color: #b66413;
+    
+}
+
+
+section#login div#ola form p#esqueci{
+       text-align: center;
+    }
+
+    
+section#login div#ola form p#esqueci span{
+   color: #b66413;
+   
+}
+
+
+form input[type= submit]:hover{
+    background-color: #D68D43;
+   
+}
+
+form label{
+    display: none;
+}
+form a.botao{
+    text-decoration: none;
+    color: #d41d4e;
+}
+form a.botao:hover{
+   color: #9a0c32;
+}
+
+
