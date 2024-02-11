@@ -4,51 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="estilos/mobilefirst.css">
-    <link rel="stylesheet" href="estilos/mediaquery.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/mobilefirst.css"><!--Aqui temos a estrutura principal do nosso estilo seguindo o conceito nobilie first-->
+    <link rel="stylesheet" href="estilos/mediaquery.css"> <!--Aqui agora temos o nosso estilo para desenvolver as versões para as outras medias query-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> <!--Esse é um link do tpo css conseguido com o site google wrap para uso dos icones dentro do site.-->
 </head>
-<body>
-    <main>
+<body> <!-- 00  Aqui temos o início do desenvolvimento do projeto login. A intenção nesse caso é desenvolver um layout de login, criando não só a versão para desktop como também para dispositivos moveis como, celular e tablet. Seguremos o conseito de mobile first,  onde o estilo é primeiramentre desenvolvido para celular e depois desenvolvido para demais dispositivos. -->
+    <main> <!--  01 Para a criação do código temos, um main que conterá dentro de sí um section que abrigara em sí duas divs, uma para abrigar um backgorund para o lyout e outra para abrigar o formulário -->
        <section id="login">
-        <div id="infeite">
-           
-        </div>
-        <div id="ola"> <!--Para nomear essa div anteriormente eu usei um id formulário e nada estava funcionando, talvez tenah sido um bug, ou essa palavra é reservada, ou éra porque não estava atualizado o meu vs code, porém, funcionou as configurações de estilo só após eu mudar esse nome-->
-            <h1>Login <span class="material-symbols-outlined">
-                login</h1> 
-                </span>
-            <p> Bem vindo(a) a Comunidade Sakura!</p>
-            <p> Faça o seu login para acessar a sua conta menbro e configurar o seu ambinete exclusivo.</p>
-            <form action="login.php" method="post" autocomplete="on">
-                <div id="login">
-                    
-                    <span class="material-symbols-outlined">
-                        mail
-                        </span>
-                        <input type="text" name="email"    id="iemail" placeholder="Digite o seu E-mail." autocomplete="email" required maxlength="30" class="campo">
-                         <label for="iemail">E-mail</label>
-                </div>
-                <div id="senha">
-                    
-                    <span class="material-symbols-outlined">
-                        Passkey
-                        </span>
-                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha." autocomplete="current-password" required class="campo">
-                         <label for="isenha">Senha</label>
-                </div>
-                
-                    <input type="submit" value="Enviar">
-                <p id="esqueci"> 
-                    
-                   <a href=""  class="botao">Esqueci minha senha</a>
-                         <span class="material-symbols-outlined">
-                        mail
-                        </span>
-                </p>
-            </form>
 
-        </div>
+        <div id="infeite"></div><!--div para a imagem -->
+
+            <div id="ola"><!-- div para o formulário -->
+                 <!--  OBS: Para nomear essa div anteriormente eu usei um id formulário e nada estava funcionando, talvez tenah sido um bug, ou essa palavra é reservada, ou éra porque não estava atualizado o meu vs code, porém, funcionou as configurações de estilo só após eu mudar esse nome-->
+               
+                <h1>Login <span class="material-symbols-outlined">login</h1></span> <!-- 02  Nesse caso, fiz a inserção do título da página e do icone do google para o acompanhar-->
+                
+                <p> Bem vindo(a) a Comunidade Sakura!</p>
+                <p> Faça o seu login para acessar a sua conta menbro e configurar o seu ambinete exclusivo.</p><!-- 03 Em ambos os parágrafos temos o conteúdo em texto para a tela de login-->
+
+
+                <form action="login.php" method="post" autocomplete="on"><!--Esse é o nosso formulário, o mesmo é do tipo POST pois fará o envio do conteúdo. Perceba que o seu auto complete está ligado-->
+                    
+                    <div id="login"> <!--dentro do formulário, criamos uma div para a parte de inserção de E-mail.-->
+                        
+                        <span class="material-symbols-outlined">mail</span> <!--Antes da criação do input fizemos a inserção  do icone do google, que nesse caso é um icone de E-mail-->
+
+                        <input type="text" name="email"    id="iemail" placeholder="Digite o seu E-mail." autocomplete="email" required maxlength="30" class="campo">
+                        <!--Fizemos a criação do input do tipo text, onde definimos a importancia de preechimento, o  auto complete, minimo e  maximo de caracters além de uma classe para esse campo -->
+                        <label for="iemail">E-mail</label> <!--Não poderiamos nos esquecer de adicinar a ele um label para indicação do que se trata o campo-->
+                    </div>
+
+                    <div id="senha"><!--dentro do formulário, criamos uma div para a inserção da senha, o memso é do tipo password-->
+                        
+                        <span class="material-symbols-outlined">Passkey</span><!--Antes da criação do input fizemos a inserção  do icone do google, que nesse caso é um icone de Passkey-->
+
+                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha." autocomplete="current-password" required class="campo">
+                         <!--Fizemos a criação do input do tipo password, onde definimos a importancia de preechimento, o  auto complete, além de uma classe para esse campo -->
+                        <label for="isenha">Senha</label> <!--Não poderiamos nos esquecer de adicinar a ele um label para indicação do que se trata o campo-->
+                    </div>
+                    
+                    <input type="submit" value="Enviar"><!--Criamos agora um botão de submeter ou enviar ele como podemos ver é um input do tipo submit-->
+                   
+                    <p id="esqueci"> <!--Esse parágrafo será criado dentro do form para link da recupração de email  dentro do mesmo estará presente um "a" para lnk, e a inserção  do icone do google, que nesse caso é um icone de E-mail-->
+                    <a href=""  class="botao">Esqueci minha senha</a>
+                    <span class="material-symbols-outlined"> mail </span>
+                    </p>
+
+                </form>
+
+            </div>
        </section>
     </main>
 </body>

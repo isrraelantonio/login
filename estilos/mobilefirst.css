@@ -1,135 +1,135 @@
 @charset "utf-8";
 
-/*Paleta de cores
+/*Paleta de cores usadas para desenvolver o projeto, nesse caso poderiámos fazer uso do root par tranformá-las em variáveis porém não fis dessa forma
 #536B26 verde 
 #D68D43 marron meio que dourado
 #C6467D  rosa
 #b91440 um verelho vinho
-
- background-color: rgba(252, 234, 211, 0.652);
+#fcead3a6 rosinha bem clarinho
+#b66413 marrom escuro
 */
 
-*{
+*{ /*Definições gerais para a página, como as margens e o padingo iguais a zero, a familia padrão usada para o arquivo e a definição de bordas como parte do box dos elementos*/
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-html, body{
+html, body{ /* Definição de largura e altura do html e também do corpo da página*/
     height: 100vh;
     width: 100vw;
 }
-body{
+body{ /*Definimos para o corpo da página um background-image do tipo linear gradiente indo em direção ao topo partindo da primeira cor e dando sequência as outras cores.*/
     background-image: linear-gradient(to top, #D68D43, #b91440, #C6467D);
     
 
 }
-main{
+main{ /*definimos para o nosso mais uma largura e altura igual a do corpo com posição relativa para posicionarmos na sequência o section no centro dá página*/
     width: 100vw;
     height: 100vh;
     position: relative;
 }
-section#login{
-    color: #d41d4e;
-    position: absolute;
+section#login{ /*Definções para o section de id login*/
+    color: #d41d4e; /*Cor das letras*/
+    position: absolute;/* Posição que terá em relação ao seu conteiner*/
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(250, 221, 183);
-    width: 250px;
-    height: 500px;
-    border-radius: 40px;
-    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.17);
-    transition: width .3s, heigth .3s; /*Nesse caso, a mudancas ocorrerão de forma não tão repentina, levará esse tempo em segudos para que ocorra*/
+    transform: translate(-50%, -50%);/* Transformando a posição para que o mesmo esncontresse com seu meio no meio da página*/
+    background-color: rgb(250, 221, 183); /*cor do seu background*/
+    width: 250px;/*largura desse section */
+    height: 500px;/*sltura desse section*/
+    border-radius: 40px;/*borda para o mesmo de 40 pixels em todas as pontas*/
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.17); /*um box shadow para sombreamento do seu container*/
+    transition: width .3s, heigth .3s; /*Nesse caso, a mudancas segundo a largura e altura desse conteirner não ocorrerão de forma tão repentina, levará esse tempo em segudos para que ocorra*/
     transition-timing-function: ease; /*Nesse caso temos transições mais suaves.*/
 }
-section#login > div#infeite{
+section#login > div#infeite{/*Estamos falando da div dentro do section que irá conter a imagem.*/
     background: #d41d4e url(../imagens/pexels-felix-mittermeier-2832074\ \(1\).jpg);
     background-size: cover;
     background-position: top center;
-    height: 200px;
-    display: block;
-    border-radius: 40px 40px 0px 0px;
+    height: 200px; /*Altura desse conteiner*/
+    display: block; /*sua disposição será em bloco para mudar de posição caso necessário*/
+    border-radius: 40px 40px 0px 0px;/*arredondamento das pontas superiores*/
 }
-section#login > div#ola{
-   padding: 10px;
-   display: block;
-   background-color: white;
-   height: 250px;
+section#login > div#ola{ /*Estamos falando da div dentro do section que irá conter o formulário.*/
+   padding: 10px; /*afastamento interno em relação ao seu conteúdo*/
+   display: block;/*sua disposição será em bloco para mudar de posição caso necessário*/
+   background-color: white; /*cor do background*/
+   height: 250px; /*Altura desse conteiner*/
 
 }
-section#login div#ola  h1{    
-    font-size: 1.5em;
-    margin-bottom: 7px;
+section#login div#ola  h1{ /*Definições para o h1 da nossa di de formulário*/
+    font-size: 1.5em; /*tamanho da letra em relação ao tamnho padrão*/
+    margin-bottom: 7px; /*Uma margem externa em relação ao conteúdo externo*/
 
 }
-section#login div#ola  p{
-    font-size: 12px;
-    margin-bottom: 7px;
+section#login div#ola  p{ /*Definições para os parágrafos da div para formulário*/
+    font-size: 12px; /*tamanho de fonte em pixels*/
+    margin-bottom: 7px; /*Uma margem externa em relação ao conteúdo externo*/
    
 }
-section#login div#ola form{
-    font-size: 10px;
-    padding: 3px 0px 5px 10px;
+section#login div#ola form{ /*Definições para o formulário da div de formulário*/
+    font-size: 10px; /*tamanho de fonte em pixels*/
+    padding: 3px 0px 5px 10px; /*afastamento interno em relação ao seu conteúdo*/
 }
-section#login div#ola form input{
-    border-radius: 40px;
-    border-color: #D68D43;
+section#login div#ola form input{  /*Definições para os inputs dentro do formulário*/
+    border-radius: 40px; /* borda redonda de 40 pixels*/
+    border-color: #D68D43; /*Cor de borda*/
     
 }
 
-section#login > div#ola input.campo{
-    font-size: 12px;
-    padding: 6px 3px 6px 5px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    transform: translateY(-8px);
+section#login > div#ola input.campo{ /*Definições para os inputs  com classe do tipo campo*/
+    font-size: 12px; /*tamanho de fonte em pixels*/
+    padding: 6px 3px 6px 5px; /*afastamento interno em relação ao seu conteúdo*/
+    margin-left: 10px; /*Uma margem externa em relação ao conteúdo externo*/
+    margin-bottom: 10px;/*Uma margem externa em relação ao conteúdo externo*/
+    transform: translateY(-8px); /*translação desse box a -8 pixels para cima no eixo y*/
     
 }
-section#login > div#ola input.campo:focus-within{
-   background-color: rgba(252, 234, 211, 0.652);
+section#login > div#ola input.campo:focus-within{ /*Ao ser focada para preenchimento, essa caixa terá um bakground color que foi escolhido*/
+   background-color: #fcead3a6;
    
    
    
 
 
 }
-form input[type= submit]{
-    margin: 3px auto 25px auto;
-    display: block;
-    font-size: 1em;
-    width: 50%;
-    padding: 6px;
-    color:  white;
-    background-color: #b66413;
+form input[type= submit]{ /*definições para o input do tipo submit dento do formulário*/
+    margin: 3px auto 25px auto; /*Uma margem externa em relação ao conteúdo externo*/
+    display: block; /*disposição em bloco, nesse caso é muito importante para sua centralização usando a margem*/
+    font-size: 1em; 
+    width: 50%; /*Largura em 50 prcento, em relação a caixa do formulário*/
+    padding: 6px; /*afastamento interno em relação ao seu conteúdo*/
+    color:  white; /*Cor do texto */
+    background-color: #b66413; /*Background da caixa do input*/
     
 }
 
 
-section#login div#ola form p#esqueci{
+section#login div#ola form p#esqueci{ /*Os  parágrafos dentro do formulário estarão com textos alinhados no centro */
        text-align: center;
     }
 
     
-section#login div#ola form p#esqueci span{
+section#login div#ola form p#esqueci span{ /*O span contido dentro doparágrafo dentro do form terá a sua cor com a definição abaixo*/
    color: #b66413;
    
 }
 
 
-form input[type= submit]:hover{
+form input[type= submit]:hover{ /*Ao passar com o mouse sobre o input do tipo submit dentro do form terá o background definido abaixo*/
     background-color: #D68D43;
    
 }
 
-form label{
+form label{ /* os labels dentro do formulário não irão aparecer*/
     display: none;
 }
-form a.botao{
+form a.botao{ /*Os links dentro do form com classe botão, não terá decoração e terão a cor definida abaixo.*/
     text-decoration: none;
     color: #d41d4e;
 }
-form a.botao:hover{
+form a.botao:hover{ /*Os links dentro do form com classe botão ao passar o mouse sobre o elemento terão a cor definida abaixo.*/
    color: #9a0c32;
 }
 
